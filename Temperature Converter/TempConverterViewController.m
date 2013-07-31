@@ -9,12 +9,16 @@
 #import "TempConverterViewController.h"
 
 @interface TempConverterViewController ()
-
+@property(nonatomic,weak) UITextField *lastModifiedField;
 - (void) endEditing;
 
 @end
 
 @implementation TempConverterViewController
+
+@synthesize lastModifiedField = _lastModifiedField;
+@synthesize farTextField = _farTextField;
+@synthesize celTextField = _celTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,6 +48,15 @@
     [self.view endEditing:YES];
 }
 
+- (float) getTemperatureForValue:(float)val inUnits:(NSString *)unitName {
+    float result = 0;
+    if ([unitName isEqual:@"farenheit"]) {
+        result = val * 1.8 + 32;
+    } else {
+        result = (val - 32) / 1.8;
+    }
+    return result;
+}
 
 #pragma mark - delegates
 
@@ -53,11 +66,15 @@
 
 - (IBAction)convertTemp {
     [self endEditing];
-    NSLog(@"I will be converting now");
+    if ([self.lastModifiedField isEqual:self.farTextField]) {
+        NSLog(@"I will be converting from farenheit");
+    } else {
+        NSLog(@"I will be converting from celcius");
+    }
 }
 
 - (IBAction)onEditEnd:(UITextField *)sender {
-    NSLog(@"Editing is ended %@", sender.restorationIdentifier);
+    self.lastModifiedField = sender;
 }
 
 
