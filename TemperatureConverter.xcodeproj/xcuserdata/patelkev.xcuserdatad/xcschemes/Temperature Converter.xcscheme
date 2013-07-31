@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4CC661D617A9314B00F4F313"
                BuildableName = "Temperature Converter.app"
-               BlueprintName = "Temperature Converter"
-               ReferencedContainer = "container:Temperature Converter.xcodeproj">
+               BlueprintName = "TemperatureConverter"
+               ReferencedContainer = "container:TemperatureConverter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4CC661F117A9314C00F4F313"
                BuildableName = "Temperature ConverterTests.xctest"
-               BlueprintName = "Temperature ConverterTests"
-               ReferencedContainer = "container:Temperature Converter.xcodeproj">
+               BlueprintName = "TemperatureConverterTests"
+               ReferencedContainer = "container:TemperatureConverter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4CC661D617A9314B00F4F313"
             BuildableName = "Temperature Converter.app"
-            BlueprintName = "Temperature Converter"
-            ReferencedContainer = "container:Temperature Converter.xcodeproj">
+            BlueprintName = "TemperatureConverter"
+            ReferencedContainer = "container:TemperatureConverter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4CC661D617A9314B00F4F313"
             BuildableName = "Temperature Converter.app"
-            BlueprintName = "Temperature Converter"
-            ReferencedContainer = "container:Temperature Converter.xcodeproj">
+            BlueprintName = "TemperatureConverter"
+            ReferencedContainer = "container:TemperatureConverter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4CC661D617A9314B00F4F313"
             BuildableName = "Temperature Converter.app"
-            BlueprintName = "Temperature Converter"
-            ReferencedContainer = "container:Temperature Converter.xcodeproj">
+            BlueprintName = "TemperatureConverter"
+            ReferencedContainer = "container:TemperatureConverter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
