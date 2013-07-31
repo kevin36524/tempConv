@@ -65,11 +65,15 @@
 }
 
 - (IBAction)convertTemp {
+    float result = 0;
     [self endEditing];
+    float val = [self.lastModifiedField.text floatValue];
     if ([self.lastModifiedField isEqual:self.farTextField]) {
-        NSLog(@"I will be converting from farenheit");
+        result = [self getTemperatureForValue:val inUnits:@"celcius"];
+        self.celTextField.text = [NSString stringWithFormat:@"%g",result];
     } else {
-        NSLog(@"I will be converting from celcius");
+        result = [self getTemperatureForValue:val inUnits:@"farenheit"];
+        self.farTextField.text = [NSString stringWithFormat:@"%g",result];
     }
 }
 
