@@ -10,4 +10,7 @@
 
 @interface TempConverterViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *farTextField;
+@property (weak, nonatomic) IBOutlet UITextField *celTextField;
+
 @end

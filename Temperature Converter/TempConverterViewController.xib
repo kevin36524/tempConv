@@ -6,6 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TempConverterViewController">
             <connections>
+                <outlet property="celTextField" destination="Lrl-Ix-U1f" id="zzC-4C-1FM"/>
+                <outlet property="farTextField" destination="NQu-LE-NWN" id="Fnr-mf-lPK"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
