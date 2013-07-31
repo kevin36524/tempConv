@@ -82,8 +82,8 @@
 		4CC661CE17A9314B00F4F313 = {
 			isa = PBXGroup;
 			children = (
-				4CC661E017A9314C00F4F313 /* Temperature Converter */,
-				4CC661F917A9314C00F4F313 /* Temperature ConverterTests */,
+				4CC661E017A9314C00F4F313 /* TemperatureConverter */,
+				4CC661F917A9314C00F4F313 /* TemperatureConverterTests */,
 				4CC661D917A9314B00F4F313 /* Frameworks */,
 				4CC661D817A9314B00F4F313 /* Products */,
 			);
@@ -109,7 +109,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4CC661E017A9314C00F4F313 /* Temperature Converter */ = {
+		4CC661E017A9314C00F4F313 /* TemperatureConverter */ = {
 			isa = PBXGroup;
 			children = (
 				4CC661E917A9314C00F4F313 /* TempConverterAppDelegate.h */,
@@ -120,6 +120,7 @@
 				4CC661EC17A9314C00F4F313 /* Images.xcassets */,
 				4CC661E117A9314C00F4F313 /* Supporting Files */,
 			);
+			name = TemperatureConverter;
 			path = "Temperature Converter";
 			sourceTree = "<group>";
 		};
@@ -134,12 +135,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4CC661F917A9314C00F4F313 /* Temperature ConverterTests */ = {
+		4CC661F917A9314C00F4F313 /* TemperatureConverterTests */ = {
 			isa = PBXGroup;
 			children = (
 				4CC661FF17A9314C00F4F313 /* Temperature_ConverterTests.m */,
 				4CC661FA17A9314C00F4F313 /* Supporting Files */,
 			);
+			name = TemperatureConverterTests;
 			path = "Temperature ConverterTests";
 			sourceTree = "<group>";
 		};
