@@ -11,7 +11,7 @@
 @interface TempConverterViewController ()
 @property(nonatomic,weak) UITextField *lastModifiedField;
 - (void) endEditing;
-
+- (float) getTemperatureForValue:(float)val inUnits:(NSString *)unitName;
 @end
 
 @implementation TempConverterViewController
@@ -34,12 +34,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self convertTemp];
 }
 
 
