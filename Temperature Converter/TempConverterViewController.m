@@ -9,9 +9,12 @@
 #import "TempConverterViewController.h"
 
 @interface TempConverterViewController ()
-@property(nonatomic,weak) UITextField *lastModifiedField;
+
+@property(nonatomic,weak) UITextField *lastModifiedField; // my Model
+
 - (void) endEditing;
 - (float) getTemperatureForValue:(float)val inUnits:(NSString *)unitName;
+
 @end
 
 @implementation TempConverterViewController
@@ -34,7 +37,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self convertTemp];
+    [self convertTemp]; // load time calibration
 }
 
 
@@ -55,13 +58,15 @@
 
 #pragma mark - delegates
 
+// end editing on tapping somewhere else
 - (IBAction)tappedSomewhere:(UIGestureRecognizer *)sender {
     [self endEditing];
 }
 
+// convert button pressed
 - (IBAction)convertTemp {
+    [self endEditing]; // this will update my Model
     float result = 0;
-    [self endEditing];
     float val = [self.lastModifiedField.text floatValue];
     if ([self.lastModifiedField isEqual:self.farTextField]) {
         result = [self getTemperatureForValue:val inUnits:@"celcius"];
@@ -72,6 +77,7 @@
     }
 }
 
+// update Model
 - (IBAction)onEditEnd:(UITextField *)sender {
     self.lastModifiedField = sender;
 }
